@@ -1,10 +1,11 @@
 package org.example
 
-import org.example.model.Card
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import javax.annotation.PostConstruct
 import kotlin.random.Random
+import org.example.model.Collection
+
 
 @Service
 class CardService {
@@ -16,7 +17,7 @@ class CardService {
     protected var collection: Collection? = null
 
     val cardCollection : List<Card>
-        get() = collection?.cards ?: listOf()
+        get() = collection?.cards? : listOf()
 
     private val lock = Any()
 

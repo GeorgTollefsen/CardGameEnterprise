@@ -6,6 +6,8 @@
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <properties><kotlin.version>1.4.32</kotlin.version><properties/>
+
 
     <modelVersion>4.0.0</modelVersion>
 
